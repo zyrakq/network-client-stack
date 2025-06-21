@@ -1,0 +1,21 @@
+services:
+  warp:
+    image: qiqiworld/warp-socks5:latest
+    # restart: unless-stopped
+    container_name: warp
+    ports:
+      - 40000:40000
+    networks:
+      - proxy-warp-network
+
+  curl:
+    image: curlimages/curl:latest
+    container_name: curl
+    command: sleep infinity
+    networks:
+      - proxy-warp-network
+
+networks:
+  proxy-warp-network:
+    name: proxy-warp-network
+    driver: bridge

@@ -1,0 +1,14 @@
+services:
+  tinyproxy-client:
+    image: vimagick/tinyproxy
+    container_name: tinyproxy-client
+    volumes:
+      - ./data:/etc/tinyproxy
+    restart: unless-stopped
+    networks: 
+      - tinyproxy-network
+
+networks: 
+  tinyproxy-network:
+    name: tinyproxy-network
+    driver: bridge

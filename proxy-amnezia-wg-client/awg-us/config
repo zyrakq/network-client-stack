@@ -1,0 +1,4 @@
+WGConfig = /etc/wireproxy/wg0.conf
+
+[Socks5]
+BindAddress = 0.0.0.0:65435

@@ -1,0 +1,10 @@
+services:
+  wireproxy:
+    # image: localhost/wireproxy:v1.0.9
+    build: .
+    restart: unless-stopped
+    container_name: wireproxy
+    ports:
+      - 65432:65432
+    volumes:
+      - ./wireproxy:/etc/wireproxy

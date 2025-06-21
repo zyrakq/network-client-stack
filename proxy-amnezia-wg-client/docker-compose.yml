@@ -1,0 +1,50 @@
+services:
+  # wireproxy-awg-free:
+  #   # image: localhost/wireproxy-awg:v1.0.11
+  #   build: .
+  #   restart: unless-stopped
+  #   container_name: wireproxy-awg-free
+  #   ports:
+  #     - 65433:65433
+  #   volumes:
+  #     - ./awg-free:/etc/wireproxy
+
+  # wireproxy-awg-fl:
+  #   # image: localhost/wireproxy-awg:v1.0.11
+  #   build: .
+  #   restart: unless-stopped
+  #   container_name: wireproxy-awg-fl
+  #   ports:
+  #     - 65434:65434
+  #   volumes:
+  #     - ./awg-fl:/etc/wireproxy
+
+  wireproxy-awg-pl:
+    # image: localhost/wireproxy-awg:v1.0.11
+    build: .
+    restart: unless-stopped
+    container_name: wireproxy-awg-pl
+    ports:
+      - 65434:65434
+    volumes:
+      - ./awg-pl:/etc/wireproxy
+
+  # wireproxy-awg-nl:
+  #   # image: localhost/wireproxy-awg:v1.0.11
+  #   build: .
+  #   restart: unless-stopped
+  #   container_name: wireproxy-awg-nl
+  #   ports:
+  #     - 65434:65434
+  #   volumes:
+  #     - ./awg-nl:/etc/wireproxy
+  
+  # wireproxy-awg-us:
+  #   # image: localhost/wireproxy-awg:v1.0.11
+  #   build: .
+  #   restart: unless-stopped
+  #   container_name: wireproxy-awg-us
+  #   ports:
+  #     - 65435:65435
+  #   volumes:
+  #     - ./awg-us:/etc/wireproxy

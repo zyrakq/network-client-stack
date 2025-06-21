@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "./wg-client"
+    },
+    {
+      "path": "./tor-client"
+    },
+    {
+      "path": "./tinyproxy-client"
+    },
+    {
+      "path": "./proxy-warp-client"
+    },
+    {
+      "path": "./proxy-wg-client"
+    },
+    {
+      "path": "./proxy-amnezia-wg-client"
+    }
+  ],
+  "settings": {}
+}
