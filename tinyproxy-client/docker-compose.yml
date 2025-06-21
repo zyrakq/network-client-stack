@@ -1,10 +1,11 @@
 services:
   tinyproxy-client:
-    image: vimagick/tinyproxy
+    image: tinyproxy
+    build: .
     container_name: tinyproxy-client
-    volumes:
-      - ./data:/etc/tinyproxy
     restart: unless-stopped
+    ports:
+      - 8888:8888
     networks: 
       - tinyproxy-network
 
